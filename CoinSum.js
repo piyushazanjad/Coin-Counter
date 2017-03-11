@@ -1,14 +1,12 @@
 
 function calc() {
     
-
-var num1 = document.getElementById("num1").value;
-var num2 = document.getElementById("num2").value;
-var num3 = document.getElementById("num3").value;
-var num4 = document.getElementById("num4").value;
+var num1 = parseInt(document.getElementById("num1").innerHTML);
+var num2 = parseInt(document.getElementById("num2").innerHTML);
+var num3 = parseInt(document.getElementById("num3").innerHTML);
+var num4 = parseInt(document.getElementById("num4").innerHTML);
 
 var total_sum = document.getElementById("sum").value;
-
 
 var denom1 = document.getElementById("denom1").value;
 var denom2 = document.getElementById("denom2").value;
@@ -27,8 +25,6 @@ document.getElementById("denom1").value = denom1;
 document.getElementById("denom2").value = denom2;
 document.getElementById("denom3").value = denom3;
 document.getElementById("denom4").value = denom4;
-
-
 
 }
     
