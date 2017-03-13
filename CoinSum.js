@@ -1,8 +1,6 @@
 
 function calc() {
- 
-
-    
+     
 var num1 = parseInt(document.getElementById("num1").innerHTML);
 var num2 = parseInt(document.getElementById("num2").innerHTML);
 var num3 = parseInt(document.getElementById("num3").innerHTML);
@@ -29,11 +27,47 @@ document.getElementById("denom3").innerHTML = denom3;
 document.getElementById("denom4").innerHTML = denom4;
 
 
-var elems = document.getElementsByClassName("badge"); 
+var elems = document.getElementsByClassName("badge1"); 
 
 for(var i = 0; i<elems.length; i+=1){
+
+
     elems[i].style.display = 'block';
+
 }
+if( denom1 == 0) {
+
+[].forEach.call(document.querySelectorAll('#d1'), function (el) {
+  el.style.visibility = 'hidden';
+});
+}
+
+if( denom2 == 0) {
+
+[].forEach.call(document.querySelectorAll('#d2'), function (el) {
+  el.style.visibility = 'hidden';
+});
+}
+
+if( denom3 == 0) {
+
+[].forEach.call(document.querySelectorAll('#d3'), function (el) {
+  el.style.visibility = 'hidden';
+});
+}
+
+if( denom4 == 0) {
+
+[].forEach.call(document.querySelectorAll('#d4'), function (el) {
+  el.style.visibility = 'hidden';
+});
+}
+
+if(total_sum == ""){
+  window.alert("Please enter values in the circles:");
+}
+
+
 
 
 }
